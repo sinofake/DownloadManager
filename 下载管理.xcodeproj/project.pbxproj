@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB10FB7B192DAC91009837CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB10FB7A192DAC91009837CC /* Foundation.framework */; };
+		FB10FB7D192DAC91009837CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB10FB7C192DAC91009837CC /* CoreGraphics.framework */; };
+		FB10FB7F192DAC91009837CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB10FB7E192DAC91009837CC /* UIKit.framework */; };
+		FB10FB85192DAC91009837CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB10FB83192DAC91009837CC /* InfoPlist.strings */; };
+		FB10FB87192DAC91009837CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FB86192DAC91009837CC /* main.m */; };
+		FB10FB8B192DAC91009837CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FB8A192DAC91009837CC /* AppDelegate.m */; };
+		FB10FB8E192DAC91009837CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB10FB8C192DAC91009837CC /* Main.storyboard */; };
+		FB10FB91192DAC91009837CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FB90192DAC91009837CC /* ViewController.m */; };
+		FB10FB93192DAC91009837CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB10FB92192DAC91009837CC /* Images.xcassets */; };
+		FB10FB9A192DAC91009837CC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB10FB99192DAC91009837CC /* XCTest.framework */; };
+		FB10FB9B192DAC91009837CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB10FB7A192DAC91009837CC /* Foundation.framework */; };
+		FB10FB9C192DAC91009837CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB10FB7E192DAC91009837CC /* UIKit.framework */; };
+		FB10FBA4192DAC91009837CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB10FBA2192DAC91009837CC /* InfoPlist.strings */; };
+		FB10FBA6192DAC91009837CC /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FBA5192DAC91009837CC /* ____Tests.m */; };
+		FB10FBD1192DAD47009837CC /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FBB2192DAD47009837CC /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FB10FBD2192DAD47009837CC /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FBB5192DAD47009837CC /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FB10FBD3192DAD47009837CC /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FBB7192DAD47009837CC /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FB10FBD4192DAD47009837CC /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FBB9192DAD47009837CC /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FB10FBD5192DAD47009837CC /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FBBB192DAD47009837CC /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FB10FBD6192DAD47009837CC /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FBBD192DAD47009837CC /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FB10FBD7192DAD47009837CC /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FBC1192DAD47009837CC /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FB10FBD8192DAD47009837CC /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FBC3192DAD47009837CC /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FB10FBD9192DAD47009837CC /* README-GHUnit in Resources */ = {isa = PBXBuildFile; fileRef = FB10FBC7192DAD47009837CC /* README-GHUnit */; };
+		FB10FBDA192DAD47009837CC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FBCA192DAD47009837CC /* Reachability.m */; };
+		FB10FBDB192DAD47009837CC /* DownloadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FBCD192DAD47009837CC /* DownloadHelper.m */; };
+		FB10FBDC192DAD47009837CC /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB10FBCF192DAD47009837CC /* DownloadManager.m */; };
+		FB10FBDE192DAFFD009837CC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB10FBDD192DAFFD009837CC /* CFNetwork.framework */; };
+		FB10FBE0192DB016009837CC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB10FBDF192DB016009837CC /* SystemConfiguration.framework */; };
+		FB10FBE2192DB022009837CC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB10FBE1192DB022009837CC /* MobileCoreServices.framework */; };
+		FB10FBE4192DB02C009837CC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB10FBE3192DB02C009837CC /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB10FB9D192DAC91009837CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB10FB6F192DAC91009837CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB10FB76192DAC91009837CC;
+			remoteInfo = "下载管理";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB10FB77192DAC91009837CC /* 下载管理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "下载管理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB10FB7A192DAC91009837CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FB10FB7C192DAC91009837CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FB10FB7E192DAC91009837CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FB10FB82192DAC91009837CC /* 下载管理-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "下载管理-Info.plist"; sourceTree = "<group>"; };
+		FB10FB84192DAC91009837CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB10FB86192DAC91009837CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB10FB88192DAC91009837CC /* 下载管理-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "下载管理-Prefix.pch"; sourceTree = "<group>"; };
+		FB10FB89192DAC91009837CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB10FB8A192DAC91009837CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB10FB8D192DAC91009837CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB10FB8F192DAC91009837CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FB10FB90192DAC91009837CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB10FB92192DAC91009837CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FB10FB98192DAC91009837CC /* 下载管理Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "下载管理Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB10FB99192DAC91009837CC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FB10FBA1192DAC91009837CC /* 下载管理Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "下载管理Tests-Info.plist"; sourceTree = "<group>"; };
+		FB10FBA3192DAC91009837CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB10FBA5192DAC91009837CC /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		FB10FBB1192DAD47009837CC /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		FB10FBB2192DAD47009837CC /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		FB10FBB3192DAD47009837CC /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		FB10FBB4192DAD47009837CC /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		FB10FBB5192DAD47009837CC /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		FB10FBB6192DAD47009837CC /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		FB10FBB7192DAD47009837CC /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		FB10FBB8192DAD47009837CC /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		FB10FBB9192DAD47009837CC /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		FB10FBBA192DAD47009837CC /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		FB10FBBB192DAD47009837CC /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		FB10FBBC192DAD47009837CC /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		FB10FBBD192DAD47009837CC /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		FB10FBBE192DAD47009837CC /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		FB10FBBF192DAD47009837CC /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		FB10FBC0192DAD47009837CC /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		FB10FBC1192DAD47009837CC /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		FB10FBC2192DAD47009837CC /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		FB10FBC3192DAD47009837CC /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		FB10FBC4192DAD47009837CC /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		FB10FBC7192DAD47009837CC /* README-GHUnit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "README-GHUnit"; sourceTree = "<group>"; };
+		FB10FBC9192DAD47009837CC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FB10FBCA192DAD47009837CC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		FB10FBCC192DAD47009837CC /* DownloadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadHelper.h; sourceTree = "<group>"; };
+		FB10FBCD192DAD47009837CC /* DownloadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadHelper.m; sourceTree = "<group>"; };
+		FB10FBCE192DAD47009837CC /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		FB10FBCF192DAD47009837CC /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		FB10FBD0192DAD47009837CC /* HttpDownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpDownloadDelegate.h; sourceTree = "<group>"; };
+		FB10FBDD192DAFFD009837CC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FB10FBDF192DB016009837CC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FB10FBE1192DB022009837CC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FB10FBE3192DB02C009837CC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FB10FBE6192DB120009837CC /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB10FB74192DAC91009837CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB10FBE4192DB02C009837CC /* libz.dylib in Frameworks */,
+				FB10FBE2192DB022009837CC /* MobileCoreServices.framework in Frameworks */,
+				FB10FBE0192DB016009837CC /* SystemConfiguration.framework in Frameworks */,
+				FB10FBDE192DAFFD009837CC /* CFNetwork.framework in Frameworks */,
+				FB10FB7D192DAC91009837CC /* CoreGraphics.framework in Frameworks */,
+				FB10FB7F192DAC91009837CC /* UIKit.framework in Frameworks */,
+				FB10FB7B192DAC91009837CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB10FB95192DAC91009837CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB10FB9A192DAC91009837CC /* XCTest.framework in Frameworks */,
+				FB10FB9C192DAC91009837CC /* UIKit.framework in Frameworks */,
+				FB10FB9B192DAC91009837CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB10FB6E192DAC91009837CC = {
+			isa = PBXGroup;
+			children = (
+				FB10FB80192DAC91009837CC /* 下载管理 */,
+				FB10FB9F192DAC91009837CC /* 下载管理Tests */,
+				FB10FB79192DAC91009837CC /* Frameworks */,
+				FB10FB78192DAC91009837CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB10FB78192DAC91009837CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB10FB77192DAC91009837CC /* 下载管理.app */,
+				FB10FB98192DAC91009837CC /* 下载管理Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB10FB79192DAC91009837CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB10FBE3192DB02C009837CC /* libz.dylib */,
+				FB10FBE1192DB022009837CC /* MobileCoreServices.framework */,
+				FB10FBDF192DB016009837CC /* SystemConfiguration.framework */,
+				FB10FBDD192DAFFD009837CC /* CFNetwork.framework */,
+				FB10FB7A192DAC91009837CC /* Foundation.framework */,
+				FB10FB7C192DAC91009837CC /* CoreGraphics.framework */,
+				FB10FB7E192DAC91009837CC /* UIKit.framework */,
+				FB10FB99192DAC91009837CC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB10FB80192DAC91009837CC /* 下载管理 */ = {
+			isa = PBXGroup;
+			children = (
+				FB10FBAF192DAD47009837CC /* ASIHTTPRequest */,
+				FB10FBCB192DAD47009837CC /* DownloadCenter */,
+				FB10FB89192DAC91009837CC /* AppDelegate.h */,
+				FB10FB8A192DAC91009837CC /* AppDelegate.m */,
+				FB10FB8C192DAC91009837CC /* Main.storyboard */,
+				FB10FB8F192DAC91009837CC /* ViewController.h */,
+				FB10FB90192DAC91009837CC /* ViewController.m */,
+				FB10FB92192DAC91009837CC /* Images.xcassets */,
+				FB10FB81192DAC91009837CC /* Supporting Files */,
+			);
+			path = "下载管理";
+			sourceTree = "<group>";
+		};
+		FB10FB81192DAC91009837CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB10FB82192DAC91009837CC /* 下载管理-Info.plist */,
+				FB10FB83192DAC91009837CC /* InfoPlist.strings */,
+				FB10FB86192DAC91009837CC /* main.m */,
+				FB10FB88192DAC91009837CC /* 下载管理-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB10FB9F192DAC91009837CC /* 下载管理Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FB10FBA5192DAC91009837CC /* ____Tests.m */,
+				FB10FBA0192DAC91009837CC /* Supporting Files */,
+			);
+			path = "下载管理Tests";
+			sourceTree = "<group>";
+		};
+		FB10FBA0192DAC91009837CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB10FBA1192DAC91009837CC /* 下载管理Tests-Info.plist */,
+				FB10FBA2192DAC91009837CC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB10FBAF192DAD47009837CC /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				FB10FBB0192DAD47009837CC /* ASIHTTPRequest */,
+				FB10FBC5192DAD47009837CC /* External */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		FB10FBB0192DAD47009837CC /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				FB10FBB1192DAD47009837CC /* ASIAuthenticationDialog.h */,
+				FB10FBB2192DAD47009837CC /* ASIAuthenticationDialog.m */,
+				FB10FBB3192DAD47009837CC /* ASICacheDelegate.h */,
+				FB10FBB4192DAD47009837CC /* ASIDataCompressor.h */,
+				FB10FBB5192DAD47009837CC /* ASIDataCompressor.m */,
+				FB10FBB6192DAD47009837CC /* ASIDataDecompressor.h */,
+				FB10FBB7192DAD47009837CC /* ASIDataDecompressor.m */,
+				FB10FBB8192DAD47009837CC /* ASIDownloadCache.h */,
+				FB10FBB9192DAD47009837CC /* ASIDownloadCache.m */,
+				FB10FBBA192DAD47009837CC /* ASIFormDataRequest.h */,
+				FB10FBBB192DAD47009837CC /* ASIFormDataRequest.m */,
+				FB10FBBC192DAD47009837CC /* ASIHTTPRequest.h */,
+				FB10FBBD192DAD47009837CC /* ASIHTTPRequest.m */,
+				FB10FBBE192DAD47009837CC /* ASIHTTPRequestConfig.h */,
+				FB10FBBF192DAD47009837CC /* ASIHTTPRequestDelegate.h */,
+				FB10FBC0192DAD47009837CC /* ASIInputStream.h */,
+				FB10FBC1192DAD47009837CC /* ASIInputStream.m */,
+				FB10FBC2192DAD47009837CC /* ASINetworkQueue.h */,
+				FB10FBC3192DAD47009837CC /* ASINetworkQueue.m */,
+				FB10FBC4192DAD47009837CC /* ASIProgressDelegate.h */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		FB10FBC5192DAD47009837CC /* External */ = {
+			isa = PBXGroup;
+			children = (
+				FB10FBC6192DAD47009837CC /* GHUnit */,
+				FB10FBC8192DAD47009837CC /* Reachability */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		FB10FBC6192DAD47009837CC /* GHUnit */ = {
+			isa = PBXGroup;
+			children = (
+				FB10FBC7192DAD47009837CC /* README-GHUnit */,
+			);
+			path = GHUnit;
+			sourceTree = "<group>";
+		};
+		FB10FBC8192DAD47009837CC /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				FB10FBC9192DAD47009837CC /* Reachability.h */,
+				FB10FBCA192DAD47009837CC /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		FB10FBCB192DAD47009837CC /* DownloadCenter */ = {
+			isa = PBXGroup;
+			children = (
+				FB10FBCC192DAD47009837CC /* DownloadHelper.h */,
+				FB10FBCD192DAD47009837CC /* DownloadHelper.m */,
+				FB10FBCE192DAD47009837CC /* DownloadManager.h */,
+				FB10FBCF192DAD47009837CC /* DownloadManager.m */,
+				FB10FBD0192DAD47009837CC /* HttpDownloadDelegate.h */,
+				FB10FBE6192DB120009837CC /* Const.h */,
+			);
+			path = DownloadCenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB10FB76192DAC91009837CC /* 下载管理 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB10FBA9192DAC91009837CC /* Build configuration list for PBXNativeTarget "下载管理" */;
+			buildPhases = (
+				FB10FB73192DAC91009837CC /* Sources */,
+				FB10FB74192DAC91009837CC /* Frameworks */,
+				FB10FB75192DAC91009837CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "下载管理";
+			productName = "下载管理";
+			productReference = FB10FB77192DAC91009837CC /* 下载管理.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB10FB97192DAC91009837CC /* 下载管理Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB10FBAC192DAC91009837CC /* Build configuration list for PBXNativeTarget "下载管理Tests" */;
+			buildPhases = (
+				FB10FB94192DAC91009837CC /* Sources */,
+				FB10FB95192DAC91009837CC /* Frameworks */,
+				FB10FB96192DAC91009837CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB10FB9E192DAC91009837CC /* PBXTargetDependency */,
+			);
+			name = "下载管理Tests";
+			productName = "下载管理Tests";
+			productReference = FB10FB98192DAC91009837CC /* 下载管理Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB10FB6F192DAC91009837CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = sskh;
+				TargetAttributes = {
+					FB10FB97192DAC91009837CC = {
+						TestTargetID = FB10FB76192DAC91009837CC;
+					};
+				};
+			};
+			buildConfigurationList = FB10FB72192DAC91009837CC /* Build configuration list for PBXProject "下载管理" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB10FB6E192DAC91009837CC;
+			productRefGroup = FB10FB78192DAC91009837CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB10FB76192DAC91009837CC /* 下载管理 */,
+				FB10FB97192DAC91009837CC /* 下载管理Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB10FB75192DAC91009837CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB10FB93192DAC91009837CC /* Images.xcassets in Resources */,
+				FB10FB85192DAC91009837CC /* InfoPlist.strings in Resources */,
+				FB10FB8E192DAC91009837CC /* Main.storyboard in Resources */,
+				FB10FBD9192DAD47009837CC /* README-GHUnit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB10FB96192DAC91009837CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB10FBA4192DAC91009837CC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB10FB73192DAC91009837CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB10FBD2192DAD47009837CC /* ASIDataCompressor.m in Sources */,
+				FB10FB91192DAC91009837CC /* ViewController.m in Sources */,
+				FB10FBD6192DAD47009837CC /* ASIHTTPRequest.m in Sources */,
+				FB10FBDB192DAD47009837CC /* DownloadHelper.m in Sources */,
+				FB10FBD1192DAD47009837CC /* ASIAuthenticationDialog.m in Sources */,
+				FB10FBD5192DAD47009837CC /* ASIFormDataRequest.m in Sources */,
+				FB10FB8B192DAC91009837CC /* AppDelegate.m in Sources */,
+				FB10FBDC192DAD47009837CC /* DownloadManager.m in Sources */,
+				FB10FBD7192DAD47009837CC /* ASIInputStream.m in Sources */,
+				FB10FB87192DAC91009837CC /* main.m in Sources */,
+				FB10FBD8192DAD47009837CC /* ASINetworkQueue.m in Sources */,
+				FB10FBD3192DAD47009837CC /* ASIDataDecompressor.m in Sources */,
+				FB10FBDA192DAD47009837CC /* Reachability.m in Sources */,
+				FB10FBD4192DAD47009837CC /* ASIDownloadCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB10FB94192DAC91009837CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB10FBA6192DAC91009837CC /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB10FB9E192DAC91009837CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB10FB76192DAC91009837CC /* 下载管理 */;
+			targetProxy = FB10FB9D192DAC91009837CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB10FB83192DAC91009837CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB10FB84192DAC91009837CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FB10FB8C192DAC91009837CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB10FB8D192DAC91009837CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB10FBA2192DAC91009837CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB10FBA3192DAC91009837CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB10FBA7192DAC91009837CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB10FBA8192DAC91009837CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB10FBAA192DAC91009837CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "下载管理/下载管理-Prefix.pch";
+				INFOPLIST_FILE = "下载管理/下载管理-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FB10FBAB192DAC91009837CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "下载管理/下载管理-Prefix.pch";
+				INFOPLIST_FILE = "下载管理/下载管理-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FB10FBAD192DAC91009837CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/下载管理.app/下载管理";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "下载管理/下载管理-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "下载管理Tests/下载管理Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FB10FBAE192DAC91009837CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/下载管理.app/下载管理";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "下载管理/下载管理-Prefix.pch";
+				INFOPLIST_FILE = "下载管理Tests/下载管理Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB10FB72192DAC91009837CC /* Build configuration list for PBXProject "下载管理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB10FBA7192DAC91009837CC /* Debug */,
+				FB10FBA8192DAC91009837CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB10FBA9192DAC91009837CC /* Build configuration list for PBXNativeTarget "下载管理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB10FBAA192DAC91009837CC /* Debug */,
+				FB10FBAB192DAC91009837CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB10FBAC192DAC91009837CC /* Build configuration list for PBXNativeTarget "下载管理Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB10FBAD192DAC91009837CC /* Debug */,
+				FB10FBAE192DAC91009837CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB10FB6F192DAC91009837CC /* Project object */;
+}
